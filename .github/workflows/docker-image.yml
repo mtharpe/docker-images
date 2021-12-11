@@ -15,6 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build Fedora Docker images
-      run: ./fedora/build.sh
-    - name: Build Ubuntu Docker images
-      run: ./ubuntu/build.sh
+      run: docker build -t fedora33:base fedora/33/Dockerfile
+    - name: Build Fedora Docker images
+      run: docker build -t fedora34:base fedora/34/Dockerfile
+    - name: Build Fedora Docker images
+      run: docker build -t fedora35:base fedora/35/Dockerfile
