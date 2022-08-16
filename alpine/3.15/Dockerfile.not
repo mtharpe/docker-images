@@ -1,0 +1,19 @@
+# syntax=docker/dockerfile:1
+FROM quay.io/bashell/alpine:3.15
+LABEL org.opencontainers.image.source https://github.com/mtharpe/docker-images
+RUN apk update && apk upgrade && apk add bash
+RUN RUN sed -i -e "s/bin\/ash/bin\/bash/" /etc/passwd
+RUN wget https://releases.hashicorp.com/boundary/0.7.6/boundary_0.7.6_linux_amd64.zip -P /tmp
+RUN unzip /tmp/boundary_0.7.6_linux_amd64.zip -d /usr/local/bin
+RUN wget https://releases.hashicorp.com/consul/1.12.0/consul_1.12.0_linux_amd64.zip -P /tmp
+RUN unzip /tmp/consul_1.12.0_linux_amd64.zip -d /usr/local/bin
+RUN wget https://releases.hashicorp.com/nomad/1.2.6/nomad_1.2.6_linux_amd64.zip -P /tmp
+RUN unzip /tmp/nomad_1.2.6_linux_amd64.zip -d /usr/local/bin
+RUN wget https://releases.hashicorp.com/packer/1.8.0/packer_1.8.0_linux_amd64.zip -P /tmp
+RUN unzip /tmp/packer_1.8.0_linux_amd64.zip -d /usr/local/bin
+RUN wget https://releases.hashicorp.com/terraform/1.1.9/terraform_1.1.9_linux_amd64.zip -P /tmp
+RUN unzip /tmp/terraform_1.1.9_linux_amd64.zip -d /usr/local/bin
+
+ENV LC_ALL=en_US.UTF-8
+
+WORKDIR /root
