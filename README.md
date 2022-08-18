@@ -1,3 +1,5 @@
+[![Image Linting](https://github.com/mtharpe/docker-images/actions/workflows/image-linting.yml/badge.svg)](https://github.com/mtharpe/docker-images/actions/workflows/image-linting.yml)
+
 [![Alpine Image Testing Build and Release](https://github.com/mtharpe/docker-images/actions/workflows/alpine-images.yml/badge.svg)](https://github.com/mtharpe/docker-images/actions/workflows/alpine-images.yml)
 
 [![Fedora Image Testing Build and Release](https://github.com/mtharpe/docker-images/actions/workflows/fedora-images.yml/badge.svg)](https://github.com/mtharpe/docker-images/actions/workflows/fedora-images.yml)
