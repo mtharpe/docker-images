@@ -1,6 +1,7 @@
 FEDORA = 33 34 35 36 latest
 UBUNTU = 18.04 20.04 21.04 22.04 latest
 ALPINE = 3.14 3.15 3.16 latest
+MANJARO = latest
 
 fedora:
 	@for i in $(FEDORA); do \
@@ -13,6 +14,10 @@ ubuntu:
 alpine:
 	@for i in $(ALPINE); do \
                 printf "\nInstalling Alpine $$i Docker Image\n" && docker pull ghcr.io/mtharpe/alpine:$$i; done
+
+manjaro:
+	@for i in $(MANJARO); do \
+                printf "\nInstalling Manjaro $$i Docker Image\n" && docker pull ghcr.io/mtharpe/manjaro:$$i; done
 
 install: fedora ubuntu alpine
 
