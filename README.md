@@ -4,7 +4,9 @@
 This repo supporting custom Docker images, commonly including OS tools and automation tools.
 
 :warning:
+
 All of the base images includle HashiCorp tools by default, as well as common system utilities since these are really used as OS images.
+
 :warning:
 
 ## Index
