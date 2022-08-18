@@ -67,7 +67,7 @@ jobs:
         file: ubuntu/18.04/Dockerfile
         context: .
         push: true
-        tags: ghcr.io/mtharpe/ubuntu18.04:main
+        tags: ghcr.io/mtharpe/ubuntu:18.04
 
     - name: Build and push Docker image for Ubuntu 20.04
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
