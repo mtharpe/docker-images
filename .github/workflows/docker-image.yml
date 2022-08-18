@@ -23,7 +23,7 @@ jobs:
     - name: Build and push Docker image for Fedora 33
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
       with:
-        file: fedora/33
+        file: fedora/33/Dockerfile
         context: .
         push: true
         tags: main
