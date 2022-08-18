@@ -1,4 +1,4 @@
-# manjaro latest
+# manjaro latest 
 FROM manjarolinux/base:latest
 LABEL org.opencontainers.image.source https://github.com/mtharpe/docker-images
 RUN pacman -Syyu --noconfirm
