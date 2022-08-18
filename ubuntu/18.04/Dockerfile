@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1
+# ubuntu 18.04
 FROM ubuntu:18.04
 LABEL org.opencontainers.image.source https://github.com/mtharpe/docker-images
 RUN apt-get update && apt-get upgrade -y --autoremove

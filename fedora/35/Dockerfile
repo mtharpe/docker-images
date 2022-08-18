@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:1
+# fedora 35
 FROM fedora:35
 LABEL org.opencontainers.image.source https://github.com/mtharpe/docker-images
 RUN dnf install -y dnf-plugins-core --nodocs --setopt install_weak_deps=False

@@ -1,4 +1,4 @@
-# bash on alpine
+# alpine 3.16
 
 FROM quay.io/bashell/alpine:3.16
 

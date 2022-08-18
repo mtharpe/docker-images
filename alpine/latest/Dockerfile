@@ -1,4 +1,4 @@
-# bash on alpine
+# alpine latest
 
 FROM quay.io/bashell/alpine:latest
 
