@@ -1,4 +1,4 @@
-name: Image Testing Build and Release
+name: Alpine Image Testing Build and Release
 
 on:
   push:
