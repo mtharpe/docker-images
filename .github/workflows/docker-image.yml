@@ -26,7 +26,7 @@ jobs:
         file: fedora/33/Dockerfile
         context: .
         push: true
-        tags: ghcr.io/mtharpe/fedora33:main
+        tags: ghcr.io/mtharpe/fedora:33
 
     - name: Build and push Docker image for Fedora 34
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
@@ -34,7 +34,7 @@ jobs:
         file: fedora/34/Dockerfile
         context: .
         push: true
-        tags: ghcr.io/mtharpe/fedora34:main
+        tags: ghcr.io/mtharpe/fedora:34
 
     - name: Build and push Docker image for Fedora 35
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
@@ -42,7 +42,7 @@ jobs:
         file: fedora/35/Dockerfile
         context: .
         push: true
-        tags: ghcr.io/mtharpe/fedora35:main
+        tags: ghcr.io/mtharpe/fedora:35
 
     - name: Build and push Docker image for Fedora 36
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
@@ -50,7 +50,7 @@ jobs:
         file: fedora/36/Dockerfile
         context: .
         push: true
-        tags: ghcr.io/mtharpe/fedora36:main
+        tags: ghcr.io/mtharpe/fedora:36
 
     - name: Build and push Docker image for Fedora Latest
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
@@ -74,7 +74,7 @@ jobs:
         file: ubuntu/20.04/Dockerfile
         context: .
         push: true
-        tags: ghcr.io/mtharpe/ubuntu20.04:main
+        tags: ghcr.io/mtharpe/ubuntu:20.04
 
     - name: Build and push Docker image for Ubuntu 21.04
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
@@ -82,7 +82,7 @@ jobs:
         file: ubuntu/21.04/Dockerfile
         context: .
         push: true
-        tags: ghcr.io/mtharpe/ubuntu21.04:main
+        tags: ghcr.io/mtharpe/ubuntu:21.04
 
     - name: Build and push Docker image for Ubuntu Latest
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
@@ -98,7 +98,7 @@ jobs:
         file: alpine/3.14/Dockerfile
         context: .
         push: true
-        tags: ghcr.io/mtharpe/alpine3.14:main
+        tags: ghcr.io/mtharpe/alpine:3.14
 
     - name: Build and push Docker image for Alpine 3.15
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
@@ -106,7 +106,7 @@ jobs:
         file: alpine/3.15/Dockerfile
         context: .
         push: true
-        tags: ghcr.io/mtharpe/alpine3.15:main
+        tags: ghcr.io/mtharpe/alpine:3.15
 
     - name: Build and push Docker image for Alpine 3.16
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
@@ -114,7 +114,7 @@ jobs:
         file: alpine/3.16/Dockerfile
         context: .
         push: true
-        tags: ghcr.io/mtharpe/alpine3.16:main
+        tags: ghcr.io/mtharpe/alpine:3.16
 
     - name: Build and push Docker image for Alpine Latest
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
