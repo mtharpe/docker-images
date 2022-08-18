@@ -9,6 +9,7 @@
 [![Ubuntu Image Testing Build and Release](https://github.com/mtharpe/docker-images/actions/workflows/ubuntu-images.yml/badge.svg)](https://github.com/mtharpe/docker-images/actions/workflows/ubuntu-images.yml)
 
 # Docker Images
+
 This repo supporting custom Docker images, commonly including OS tools and automation tools.
 
 :warning: All of the base images includle HashiCorp tools by default, as well as common system utilities since these are really used as OS images.
@@ -31,3 +32,4 @@ This repo supporting custom Docker images, commonly including OS tools and autom
 | alpine | 3.15 | Alpine 3.15 minimal OS image with HashiCorp repo |
 | alpine | 3.16 | Alpine 3.16 minimal OS image with HashiCorp repo |
 | alpine | latest | Alpine Latest minimal OS image with HashiCorp repo |
+| manjaro | latest| Manjaro Latest minimal OS image with HashiCorp tools |
