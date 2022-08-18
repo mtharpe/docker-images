@@ -1,6 +1,7 @@
 # alpine latest 
 
 FROM alpine:latest
+LABEL org.opencontainers.image.source https://github.com/mtharpe/docker-images
 
 # make sure the package repository is up to date
 RUN apk --no-cache add bash

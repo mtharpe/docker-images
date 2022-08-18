@@ -1,6 +1,7 @@
 # alpine 3.14
 
 FROM alpine:3.14
+LABEL org.opencontainers.image.source https://github.com/mtharpe/docker-images
 
 # make sure the package repository is up to date
 RUN apk --no-cache add bash
