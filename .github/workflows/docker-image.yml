@@ -2,6 +2,8 @@ name: Image Testing Build and Release
 
 on:
   push:
+    branches:
+      - "main"
     paths:
       - '**/**/Dockerfile'
 
