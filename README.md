@@ -1,4 +1,7 @@
-[![Image Testing](https://github.com/mtharpe/docker-images/actions/workflows/docker-image.yml/badge.svg)](https://github.com/mtharpe/docker-images/actions/workflows/docker-image.yml)
+[![Alpine Image Testing Build and Release](https://github.com/mtharpe/docker-images/actions/workflows/alpine-images.yml/badge.svg)](https://github.com/mtharpe/docker-images/actions/workflows/alpine-images.yml)
+[![Fedora Image Testing Build and Release](https://github.com/mtharpe/docker-images/actions/workflows/fedora-images.yml/badge.svg)](https://github.com/mtharpe/docker-images/actions/workflows/fedora-images.yml)
+[![Manjaro Image Testing Build and Release](https://github.com/mtharpe/docker-images/actions/workflows/manjaro-images.yml/badge.svg)](https://github.com/mtharpe/docker-images/actions/workflows/manjaro-images.yml)
+[![Ubuntu Image Testing Build and Release](https://github.com/mtharpe/docker-images/actions/workflows/ubuntu-images.yml/badge.svg)](https://github.com/mtharpe/docker-images/actions/workflows/ubuntu-images.yml)
 
 # Docker Images
 This repo supporting custom Docker images, commonly including OS tools and automation tools.
