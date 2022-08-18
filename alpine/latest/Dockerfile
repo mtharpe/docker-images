@@ -1,6 +1,6 @@
 # bash on alpine
 
-FROM quay.io/bashell/alpine:3.15
+FROM quay.io/bashell/alpine:latest
 
 # make sure the package repository is up to date
 RUN apk update \

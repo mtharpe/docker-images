@@ -83,3 +83,19 @@ jobs:
         context: .
         push: true
         tags: ghcr.io/mtharpe/ubuntu22.04:main
+
+    - name: Build and push Docker image for Alpine 3.14
+      uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+      with:
+        file: alpine/3.14/Dockerfile
+        context: .
+        push: true
+        tags: ghcr.io/mtharpe/alpine3.14:main
+
+    - name: Build and push Docker image for Alpine 3.15
+      uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+      with:
+        file: alpine/3.15/Dockerfile
+        context: .
+        push: true
+        tags: ghcr.io/mtharpe/alpine3.15:main
