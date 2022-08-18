@@ -1,4 +1,4 @@
-name: Image Testing
+name: Image Testing Build and Release
 
 on:
   push:
@@ -35,3 +35,19 @@ jobs:
         context: .
         push: true
         tags: ghcr.io/mtharpe/fedora34:main
+
+    - name: Build and push Docker image for Fedora 35
+      uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+      with:
+        file: fedora/35/Dockerfile
+        context: .
+        push: true
+        tags: ghcr.io/mtharpe/fedora35:main
+
+    - name: Build and push Docker image for Fedora 36
+      uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+      with:
+        file: fedora/36/Dockerfile
+        context: .
+        push: true
+        tags: ghcr.io/mtharpe/fedora36:main
