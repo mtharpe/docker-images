@@ -1,6 +1,6 @@
 # alpine 3.14
 
-FROM quay.io/bashell/alpine:3.14
+FROM alpine:3.14
 
 # make sure the package repository is up to date
 RUN apk update \

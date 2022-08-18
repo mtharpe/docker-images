@@ -1,6 +1,6 @@
 # alpine latest 
 
-FROM quay.io/bashell/alpine:latest
+FROM alpine:latest
 
 # make sure the package repository is up to date
 RUN apk update \
