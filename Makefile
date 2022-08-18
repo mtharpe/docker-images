@@ -19,6 +19,6 @@ manjaro:
 	@for i in $(MANJARO); do \
                 printf "\nInstalling Manjaro $$i Docker Image\n" && docker pull ghcr.io/mtharpe/manjaro:$$i; done
 
-install: fedora ubuntu alpine
+install: fedora ubuntu alpine manjaro
 
-.PHONY: fedora ubuntu alpine install
+.PHONY: fedora ubuntu alpine manjaro install
