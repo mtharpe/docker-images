@@ -1,0 +1,62 @@
+name: Image Testing Build and Release
+
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - 'fedora/**/Dockerfile'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    
+    - name: Log in to the Container registry
+      uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GH_TOKEN }}
+
+    - name: Build and push Docker image for Fedora 33
+      uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+      with:
+        file: fedora/33/Dockerfile
+        context: .
+        push: true
+        tags: ghcr.io/mtharpe/fedora:33
+
+    - name: Build and push Docker image for Fedora 34
+      uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+      with:
+        file: fedora/34/Dockerfile
+        context: .
+        push: true
+        tags: ghcr.io/mtharpe/fedora:34
+
+    - name: Build and push Docker image for Fedora 35
+      uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+      with:
+        file: fedora/35/Dockerfile
+        context: .
+        push: true
+        tags: ghcr.io/mtharpe/fedora:35
+
+    - name: Build and push Docker image for Fedora 36
+      uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+      with:
+        file: fedora/36/Dockerfile
+        context: .
+        push: true
+        tags: ghcr.io/mtharpe/fedora:36
+
+    - name: Build and push Docker image for Fedora Latest
+      uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
+      with:
+        file: fedora/latest/Dockerfile
+        context: .
+        push: true
+        tags: ghcr.io/mtharpe/fedora:latest
