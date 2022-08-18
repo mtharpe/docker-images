@@ -3,11 +3,9 @@
 FROM alpine:3.16
 
 # make sure the package repository is up to date
-RUN apk update \
- && apk upgrade \
- && apk add bash \
- && rm -rf /var/cache/*/* \
- && echo "" > /root/.ash_history
+RUN apk --no-cache add bash
+RUN rm -rf /var/cache/*/*
+RUN echo "" > /root/.ash_history
 
 # change default shell from ash to bash
 RUN sed -i -e "s/bin\/ash/bin\/bash/" /etc/passwd
