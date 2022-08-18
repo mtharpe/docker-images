@@ -1,7 +1,7 @@
 [![Image Testing](https://github.com/mtharpe/docker-images/actions/workflows/docker-image.yml/badge.svg)](https://github.com/mtharpe/docker-images/actions/workflows/docker-image.yml)
 
 # Docker Images
-This repo is for holding all of my custom images used for different purposes.
+This repo supporting custom Docker images, commonly including OS tools and automation tools.
 
 :warning:
 All of the base images includle HashiCorp tools by default, as well as common system utilities since these are really used as OS images.
