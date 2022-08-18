@@ -19,4 +19,4 @@ jobs:
       with:
         dockerfile: Dockerfile
         recursive: true
-        ignonre: DL3018,DL3007,DL3059,DL3041,DL3008
+        ignore: DL3018,DL3007,DL3059,DL3041,DL3008
