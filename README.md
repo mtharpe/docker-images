@@ -15,7 +15,6 @@ This repo supporting custom Docker images, commonly including OS tools and autom
 
 | Name | Tag | Notes |
 |------|---------|--------------|
-| fedoratoolbox | base | Used for Fedora "toolbox" image with custom utils installed |
 | fedora | 33 | Fedora 33 OS image with HashiCorp repo |
 | fedora | 34 | Fedora 34 OS image with HashiCorp repo |
 | fedora | 35 | Fedora 35 OS image with HashiCorp repo |
