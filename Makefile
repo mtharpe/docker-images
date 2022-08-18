@@ -1,5 +1,19 @@
-LIST = fedora35 fedora34 fedora33 fedoratoolbox ubuntu18.04 ubuntu20.04 ubuntu21.04 ubuntu22.04
+FEDORA = 33 34 35 36 latest
+UBUNTU = 18.04 20.04 21.04 22.04 latest
+ALPINE = 3.14 3.15 3.16 latest
 
-install:
-	@for i in $(LIST); do \
-		printf "\nInstalling Docker Image\n" && docker pull ghcr.io/mtharpe/$$i:base; done
+fedora:
+	@for i in $(FEDORA); do \
+		printf "\nInstalling Fedora $$i Docker Image\n" && docker pull ghcr.io/mtharpe/fedora:$$i; done
+
+ubuntu:
+	@for i in $(UBUNTU); do \
+                printf "\nInstalling Ubuntu $$i Docker Image\n" && docker pull ghcr.io/mtharpe/ubuntu:$$i; done
+
+alpine:
+	@for i in $(ALPINE); do \
+                printf "\nInstalling Alpine $$i Docker Image\n" && docker pull ghcr.io/mtharpe/alpine:$$i; done
+
+install: fedora ubuntu alpine
+
+.PHONY: fedora ubuntu alpine install
