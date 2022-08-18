@@ -26,4 +26,4 @@ jobs:
         file: fedora/33/Dockerfile
         context: .
         push: true
-        tags: main
+        tags: ghcr.io/mtharpe/fedora33:main
