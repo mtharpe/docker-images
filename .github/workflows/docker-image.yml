@@ -26,5 +26,4 @@ jobs:
         file: fedora/33
         context: .
         push: true
-        tags: ${{ steps.meta.outputs.tags }}
-        labels: ${{ steps.meta.outputs.labels }}
+        tags: main
