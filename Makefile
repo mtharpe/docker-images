@@ -22,6 +22,3 @@ manjaro:
 install: fedora ubuntu alpine manjaro
 
 .PHONY: fedora ubuntu alpine manjaro install
-
-lint:
-	hadolint --ignore DL3018 --ignore DL3007 --ignore DL3059 --ignore DL3041 --ignore DL3008 ./Dockerfile
