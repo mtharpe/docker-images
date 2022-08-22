@@ -1,0 +1,53 @@
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+install: fedora ubuntu alpine manjaro
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+alpine:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 15):
+	@for i in $(ALPINE); do \
+                printf "\nInstalling Alpine $$i Docker Image\n" && docker pull ghcr.io/mtharpe/alpine:$$i; done
+
+.PHONY: fedora ubuntu alpine manjaro install
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+manjaro:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 19):
+	@for i in $(MANJARO); do \
+                printf "\nInstalling Manjaro $$i Docker Image\n" && docker pull ghcr.io/mtharpe/manjaro:$$i; done
+
+# files hash-table stats:
+# Load=10/1024=1%, Rehash=0, Collisions=0/29=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 18 / storage = 144 B / avg = 8 B
+# current buf: size = 8162 B / used = 144 B / count = 18 / avg = 8 B
+
+# strcache performance: lookups = 41 / hit rate = 56%
+# hash-table stats:
+# Load=18/8192=0%, Rehash=0, Collisions=0/41=0%
+# Finished Make data base on Mon Aug 22 13:40:49 2022
+
+ 
