@@ -1,6 +1,6 @@
-FEDORA = 33 34 35 36 latest
-UBUNTU = 18.04 20.04 21.04 22.04 latest
-ALPINE = 3.14 3.15 3.16 latest
+FEDORA = latest
+UBUNTU = latest
+ALPINE = latest
 MANJARO = latest
 
 fedora:
