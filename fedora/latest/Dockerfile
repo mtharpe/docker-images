@@ -1,9 +1,8 @@
 # fedora latest 
 FROM fedora:latest
 LABEL org.opencontainers.image.source=https://github.com/mtharpe/docker-images
-RUN dnf upgrade -y
-RUN dnf install -y dnf-plugins-core wget curl unzip
-RUN dnf clean all
+RUN dnf upgrade -y && dnf clean all
+RUN dnf install -y dnf-plugins-core wget curl unzip && dnf clean all
 
 RUN rm -rf /tmp/*
 
