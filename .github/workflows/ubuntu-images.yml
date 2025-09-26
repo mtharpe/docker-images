@@ -21,38 +21,6 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GH_TOKEN }}
 
-    - name: Build and push Docker image for Ubuntu 18.04
-      uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
-      with:
-        file: ubuntu/18.04/Dockerfile
-        context: .
-        push: true
-        tags: ghcr.io/mtharpe/ubuntu:18.04
-
-    - name: Build and push Docker image for Ubuntu 20.04
-      uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
-      with:
-        file: ubuntu/20.04/Dockerfile
-        context: .
-        push: true
-        tags: ghcr.io/mtharpe/ubuntu:20.04
-
-    - name: Build and push Docker image for Ubuntu 21.04
-      uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
-      with:
-        file: ubuntu/21.04/Dockerfile
-        context: .
-        push: true
-        tags: ghcr.io/mtharpe/ubuntu:21.04
-
-    - name: Build and push Docker image for Ubuntu 22.04
-      uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
-      with:
-        file: ubuntu/22.04/Dockerfile
-        context: .
-        push: true
-        tags: ghcr.io/mtharpe/ubuntu:22.04
-
     - name: Build and push Docker image for Ubuntu Latest
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
       with:
