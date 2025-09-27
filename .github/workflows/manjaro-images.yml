@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - "main"
-    paths:
-      - 'manjaro/**/Dockerfile'
+    #paths:
+    #  - 'manjaro/**/Dockerfile'
 
 jobs:
   build:
