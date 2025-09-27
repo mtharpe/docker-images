@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - "main"
-    paths:
-      - 'fedora/**/Dockerfile'
+    #paths:
+    #  - 'fedora/**/Dockerfile'
 
 jobs:
   build:
