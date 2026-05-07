@@ -1,12 +1,4 @@
-[![Image Linting](https://github.com/mtharpe/docker-images/actions/workflows/image-linting.yml/badge.svg)](https://github.com/mtharpe/docker-images/actions/workflows/image-linting.yml)
-
-[![Alpine Image Testing Build and Release](https://github.com/mtharpe/docker-images/actions/workflows/alpine-images.yml/badge.svg)](https://github.com/mtharpe/docker-images/actions/workflows/alpine-images.yml)
-
-[![Fedora Image Testing Build and Release](https://github.com/mtharpe/docker-images/actions/workflows/fedora-images.yml/badge.svg)](https://github.com/mtharpe/docker-images/actions/workflows/fedora-images.yml)
-
-[![Manjaro Image Testing Build and Release](https://github.com/mtharpe/docker-images/actions/workflows/manjaro-images.yml/badge.svg)](https://github.com/mtharpe/docker-images/actions/workflows/manjaro-images.yml)
-
-[![Ubuntu Image Testing Build and Release](https://github.com/mtharpe/docker-images/actions/workflows/ubuntu-images.yml/badge.svg)](https://github.com/mtharpe/docker-images/actions/workflows/ubuntu-images.yml)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/mtharpe/docker-images/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/mtharpe/docker-images/tree/main)
 
 # Docker Images
 
