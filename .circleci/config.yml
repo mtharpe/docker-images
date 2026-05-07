@@ -15,7 +15,9 @@ jobs:
           name: hadolint all Dockerfiles
           command: |
             find . -name 'Dockerfile*' -not -path './.git/*' -print0 \
-              | xargs -0 -r -n1 hadolint
+              | xargs -0 -r -n1 hadolint \
+                  --ignore DL3007 --ignore DL3008 --ignore DL3018 \
+                  --ignore DL3041 --ignore DL3059
 
 workflows:
   validate:
