@@ -1,0 +1,23 @@
+version: 2.1
+description: Lint every Dockerfile in the repo
+
+executors:
+  hadolint:
+    docker:
+      - image: hadolint/hadolint:latest-alpine
+
+jobs:
+  hadolint:
+    executor: hadolint
+    steps:
+      - checkout
+      - run:
+          name: hadolint all Dockerfiles
+          command: |
+            find . -name 'Dockerfile*' -not -path './.git/*' -print0 \
+              | xargs -0 -r -n1 hadolint
+
+workflows:
+  validate:
+    jobs:
+      - hadolint
